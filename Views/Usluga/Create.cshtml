@@ -1,0 +1,30 @@
+@model Usluga
+
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="All"></div>
+        
+        <div class="form-group">
+            <label asp-for="Detalji"></label>
+            <input asp-for="Detalji" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Cijena"></label>
+            <input asp-for="Cijena" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Vrijeme"></label>
+            <input asp-for="Vrijeme" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Kontakt"></label>
+            <input asp-for="Kontakt" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Lokacija"></label>
+            <input asp-for="Lokacija" class="form-control" />
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary" type="submit">Dodaj</button>
+            <a asp-action="Index" class="btn btn-danger">Odustani</a>
+        </div>
+    </form>

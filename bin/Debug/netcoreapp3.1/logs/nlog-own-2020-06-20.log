@@ -1,0 +1,2 @@
+2020-06-20 17:27:32.4303|0|TestWebApp.Controllers.SklopljeniPosaoOsobaController|INFO|  SklopljeniPosaoOsoba 5 dodan  |url: https://localhost/SklopljeniPosaoOsoba/Create?|action: Create
+2020-06-20 17:41:04.9258|0|TestWebApp.Controllers.SklopljeniPosaoOpremaController|INFO|  SklopljeniPosaoOprema 3 dodan  |url: https://localhost/SklopljeniPosaoOprema/Create?|action: Create

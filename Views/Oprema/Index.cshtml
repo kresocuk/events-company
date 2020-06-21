@@ -1,0 +1,68 @@
+@model TestWebApp.ViewModels.OpremeViewModel
+
+@{
+    ViewData["title"] = "Popis opreme";
+}
+
+<a asp-action="Create">Unos nove opreme</a>
+<a class="nav-link @(ViewBag.Controller == "IznajmljivanjeOprema" ? "active": "")" asp-action="Index" asp-controller="IznajmljivanjeOprema">Iznajmljena oprema.</a>
+<a class="nav-link @(ViewBag.Controller == "UnajmljivanjeOprema" ? "active": "")" asp-action="Index" asp-controller="UnajmljivanjeOprema">Unajmljena oprema.</a>
+
+
+
+
+<pager page-info="@Model.PagingInfo" page-title="Unesite zeljenu stranicu"
+       page-action="Index" class="float-right">
+</pager>
+
+<table class="table table-sm table-striped table-hover" id="tableoprema">
+    <thead>
+        <tr>
+            @{
+                string[] nazivi = {"Id", "Slika", "Inventarni broj", "Naziv", "Tip", "Referentni Tip", "Skladiste", "Knjigovodstvena vrijednost", "Kupovna vrijednost", "Vrijeme Kupnje", "Vrijeme Amortizacije" ,  "Opis" };
+                bool[] sortable = { true, true, true, true, true, true, true, true, true, true, false, false};
+                for (int i = 1; i <= nazivi.Length; i++)
+                {
+                    <th>
+                        @if (sortable[i - 1])
+                        {
+                            <a asp-route-sort="@i"
+                               asp-route-page="@Model.PagingInfo.CurrentPage"
+                               asp-route-ascending="@(Model.PagingInfo.Sort == i ? !Model.PagingInfo.Ascending : true)">
+                                @nazivi[i - 1]
+                            </a>
+                        }
+                        else
+                        {
+                            @nazivi[i - 1]
+                        }
+
+                    </th>
+                }
+            }
+            <th></th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var oprema in Model.Oprema)
+        {
+
+            <partial name="Row" model="oprema" />
+        }
+    </tbody>
+</table>
+
+@section Styles{
+
+}
+
+@section scripts{
+    <script>
+		$(function () {
+			SetDeleteAjax(".deleteajax", '@Url.Action("Delete")', 'id');
+			SetEditAjax(".editajax", '@Url.Action("Edit")', 'id');
+		});
+    </script>
+}

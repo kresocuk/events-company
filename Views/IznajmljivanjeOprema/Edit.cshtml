@@ -1,0 +1,32 @@
+﻿@model IznajmljivanjeOprema
+
+    <tr>
+       <td>
+            @Model.Id
+            <input type="hidden" asp-for="Id" data-save="" />
+        </td>
+        <td>
+            <input asp-for="Cijena" class="form-control" data-save="" />
+        </td>
+        <td>
+            <input asp-for="Detalji" class="form-control" data-save="" />
+        </td>
+        <td>
+            <input asp-for="OpremaId" class="form-control" data-save="" />
+        </td>
+        <td>
+            <input asp-for="Trajanje" class="checkbox" data-save="" />
+        </td>
+        <td>
+            <input asp-for="Vrijeme" class="form-control" data-save="" />
+        </td>
+        <td>
+            <input asp-for="Kontakt" class="form-control" data-save="" />
+        </td>
+        <td>
+            <button type="submit" class="btn btn-sm btn-primary save" title="Spremi"><i class="fas fa-save"></i></button>
+        </td>
+        <td>
+            <button class="btn btn-sm cancel" title="Odustani"><i class="fas fa-times-circle"></i></button>
+        </td>
+    </tr>

@@ -1,0 +1,86 @@
+@model TestWebApp.ViewModels.PonudeViewModel
+
+@{
+    ViewData["title"] = "Popis ponuda";
+}
+
+<a asp-action="Create">Unos novog ponude</a>
+
+<pager page-info="@Model.PagingInfo" page-title="Unesite zeljenu stranicu"
+       page-action="Index" class="float-right">
+</pager>
+
+<table class="table table-sm table-striped table-hover" id="tableponude">
+    <thead>
+        <tr>
+            @{
+                string[] nazivi = { "Naziv", "Cijena", "Vrijeme", "Trajanje", "Opis"};
+                bool[] sortable = { true, true, false, true,false };
+                for (int i = 1; i <= nazivi.Length; i++)
+                {
+                        <th>
+                            @if (sortable[i - 1])
+                            {
+                                <a asp-route-sort="@i"
+                                   asp-route-page="@Model.PagingInfo.CurrentPage"
+                                   asp-route-ascending="@(Model.PagingInfo.Sort == i ? !Model.PagingInfo.Ascending : true)">
+                                    @nazivi[i - 1]
+                                </a>
+                            }
+                            else
+                            {
+                                @nazivi[i - 1]
+                            }
+
+                        </th>
+                }
+            }
+            <th></th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var ponuda in Model.Ponude)
+        {
+            <tr>
+                <td class="text-left">@ponuda.Naziv</td>
+                <td class="text-left">@ponuda.Cijena</td>
+                <td class="text-left">@ponuda.Vrijeme</td>
+                <td class="text-left">@ponuda.Trajanje</td>
+                <td class="text-left">@ponuda.Opis</td>
+                <td class="btn-group">
+                    <a asp-action="Edit"
+                       asp-route-id="@ponuda.Id"
+                       asp-route-page="@Model.PagingInfo.CurrentPage"
+                       asp-route-sort="@Model.PagingInfo.Sort"
+                       asp-route-ascending="@Model.PagingInfo.Ascending"
+                       class="btn btn-sm" title="Ažuriraj"><i class="fas fa-edit"></i></a>
+
+                    <form asp-action="Delete" method="post"
+                          asp-route-page="@Model.PagingInfo.CurrentPage"
+                          asp-route-sort="@Model.PagingInfo.Sort"
+                          asp-route-ascending="@Model.PagingInfo.Ascending">
+                        <input type="hidden" name="Id" value="@ponuda.Id" />
+                        <button type="submit" class="btn btn-sm btn-danger delete" title="Obriši"><i class="fas fa-trash-alt"></i></button>
+                    </form>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+@section Styles{
+
+}
+
+@section scripts{
+
+    <script>
+		$(function () {
+			SetDeleteAjax(".deleteajax", '@Url.Action("Delete")', 'id');
+			SetEditAjax(".editajax", '@Url.Action("Edit")', 'id');
+		});
+    </script>
+
+}

@@ -1,0 +1,72 @@
+2020-06-15 15:04:30.4500|0|TestWebApp.Program|DEBUG|init main 
+2020-06-15 15:04:36.3148|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-15 15:04:36.3681|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-15 15:04:36.3902|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-15 15:04:36.4076|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-15 15:04:36.4301|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-15 16:52:02.4260|0|TestWebApp.Program|DEBUG|init main 
+2020-06-15 16:52:13.0020|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-15 16:52:13.0424|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-15 16:52:13.0642|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-15 16:52:13.0867|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-15 16:52:13.1098|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-15 16:55:58.1258|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (21,621ms) [Parameters=[@__p_1='?' (DbType = Int32), @__term_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [o].[ID] AS [Id], [o].[Naziv] AS [Label]
+FROM [Oprema] AS [o]
+WHERE (@__term_0 = '') OR (CHARINDEX(@__term_0, [o].[Naziv]) > 0)
+ORDER BY [o].[Naziv], [o].[ID] 
+2020-06-15 16:55:58.4220|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred while iterating over the results of a query for context type 'TestWebApp.Models.PI03Context'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.)
+ ---> System.ComponentModel.Win32Exception (121): The semaphore timeout period has expired.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+ClientConnectionId:deb21ca4-17a1-42aa-bb1c-faaa94dc701d
+Error Number:121,State:0,Class:20
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseSqlServer' call.
+2020-06-15 16:56:29.7552|0|TestWebApp.Program|DEBUG|init main 
+2020-06-15 16:56:32.1323|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-15 16:56:32.1787|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-15 16:56:32.2067|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-15 16:56:32.2294|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-15 16:56:32.2528|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-15 19:04:44.3885|0|TestWebApp.Program|DEBUG|init main 
+2020-06-15 19:04:49.9163|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-15 19:04:49.9597|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-15 19:04:49.9889|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-15 19:04:50.0210|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-15 19:04:50.0390|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-15 19:09:53.5237|0|TestWebApp.Program|DEBUG|init main 
+2020-06-15 19:09:55.6078|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-15 19:09:55.6502|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-15 19:09:55.6770|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-15 19:09:55.7055|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-15 19:09:55.7320|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-15 19:48:21.7653|0|TestWebApp.Program|DEBUG|init main 
+2020-06-15 19:48:27.3103|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-15 19:48:27.3572|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-15 19:48:27.3906|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-15 19:48:27.4188|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-15 19:48:27.4503|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 

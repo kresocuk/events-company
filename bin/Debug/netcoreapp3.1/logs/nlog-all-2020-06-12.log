@@ -1,0 +1,226 @@
+2020-06-12 12:02:28.3333|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 12:02:34.4541|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 12:02:34.4966|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 12:02:34.5192|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 12:02:34.5461|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 12:02:34.5647|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-12 12:43:46.2787|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 12:43:48.6330|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 12:43:48.6709|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 12:43:48.7401|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 12:43:48.7579|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 12:43:48.7745|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-12 12:47:27.6602|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 12:47:29.9231|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 12:47:29.9630|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 12:47:29.9883|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 12:47:30.0109|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 12:47:30.0353|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-12 12:50:42.4860|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 12:50:44.7914|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 12:50:44.8813|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 12:50:44.9052|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 12:50:44.9243|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 12:50:44.9430|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-12 12:51:46.9854|0|TestWebApp.Controllers.UslugaController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-12 12:51:47.6887|0|TestWebApp.Controllers.UslugaController|INFO|Usluga 1 dodana  
+2020-06-12 12:52:34.4808|0|TestWebApp.Controllers.UslugaController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-12 12:52:34.6040|0|TestWebApp.Controllers.UslugaController|INFO|Usluga 2 dodana  
+2020-06-12 12:53:10.5443|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 12:53:12.7388|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 12:53:12.7765|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 12:53:12.8013|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 12:53:12.8208|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 12:53:12.8392|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-12 12:53:51.4334|0|TestWebApp.Controllers.UslugaController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-12 12:53:52.5591|0|TestWebApp.Controllers.UslugaController|INFO|Usluga 3 dodana  
+2020-06-12 12:55:08.1110|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 12:55:10.4113|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 12:55:10.5056|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 12:55:10.5343|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 12:55:10.5502|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 12:55:10.5703|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-12 12:55:53.1253|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 12:55:55.3488|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 12:55:55.3879|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 12:55:55.4145|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 12:55:55.4426|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 12:55:55.4684|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-12 12:57:46.2522|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 12:57:48.5427|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 12:57:48.5816|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 12:57:48.6071|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 12:57:48.6280|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 12:57:48.6539|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-12 12:59:10.8000|0|TestWebApp.Controllers.UslugaController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-12 12:59:11.0581|0|TestWebApp.Controllers.UslugaController|INFO|Usluga 4 dodana  
+2020-06-12 13:54:47.6057|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 13:54:56.3565|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 13:54:56.4432|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 13:54:56.4929|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 13:54:56.5290|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 13:54:56.5734|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-12 14:05:29.1864|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 14:05:34.1176|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 14:05:34.2411|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 14:05:34.2795|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 14:05:34.3175|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 14:05:34.3527|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-12 14:06:11.4935|0|TestWebApp.Controllers.SkladisteController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-12 14:06:12.4835|0|TestWebApp.Controllers.SkladisteController|INFO|Skladiste test dodan  
+2020-06-12 14:33:23.3307|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 14:33:26.8094|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 14:33:26.8626|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 14:33:26.9159|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 14:33:26.9688|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 14:33:27.0025|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-12 14:34:32.7811|0|TestWebApp.Controllers.UnajmljivanjeOpremaController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-12 14:34:33.9383|0|TestWebApp.Controllers.UnajmljivanjeOpremaController|INFO|UnajmljivanjeOprema naziv dodan  
+2020-06-12 14:37:58.8717|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 14:38:02.7046|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 14:38:02.7568|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 14:38:02.7970|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 14:38:02.8334|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 14:38:02.8942|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-12 14:38:34.1975|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (381ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Unajmljivanje_Oprema] SET [Referentni_tipID] = @p0
+WHERE [ID] = @p1;
+SELECT @@ROWCOUNT; 
+2020-06-12 14:38:34.8382|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Unajmljivanje_Oprema_Referentni_tip". The conflict occurred in database "PI-03", table "dbo.Referentni_tip", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5205789b-2102-422f-ad36-6d3fe3d9131c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) An error occurred while updating the entries. See the inner exception for details.
+2020-06-12 14:48:39.6315|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 14:48:42.4353|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 14:48:42.6154|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 14:48:42.7231|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 14:48:42.8066|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 14:48:42.8257|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-12 14:49:16.9605|0|TestWebApp.Controllers.NatjecajController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-12 14:49:18.0707|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (51ms) [Parameters=[@p0='?' (Size = 8000) (DbType = AnsiString), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Natjecaj] ([Detalji], [PonudaID])
+VALUES (@p0, @p1);
+SELECT [ID]
+FROM [Natjecaj]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-12 14:49:18.3140|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Natjecaj_Ponuda". The conflict occurred in database "PI-03", table "dbo.Ponuda", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:2cdda31d-0de1-45bb-a20c-857f98dcfe79
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-12 14:49:18.6867|0|TestWebApp.Controllers.NatjecajController|ERROR|Pogreška prilikom dodavanja novog ref natjecaja An error occurred while updating the entries. See the inner exception for details.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Natjecaj_Ponuda". The conflict occurred in database "PI-03", table "dbo.Ponuda", column 'ID'.
+The statement has been terminated.
+ 
+2020-06-12 14:49:24.8592|0|TestWebApp.Controllers.NatjecajController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-12 14:49:25.1125|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (94ms) [Parameters=[@p0='?' (Size = 8000) (DbType = AnsiString), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Natjecaj] ([Detalji], [PonudaID])
+VALUES (@p0, @p1);
+SELECT [ID]
+FROM [Natjecaj]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-12 14:49:25.3190|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Natjecaj_Ponuda". The conflict occurred in database "PI-03", table "dbo.Ponuda", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:2cdda31d-0de1-45bb-a20c-857f98dcfe79
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-12 14:49:25.5068|0|TestWebApp.Controllers.NatjecajController|ERROR|Pogreška prilikom dodavanja novog ref natjecaja An error occurred while updating the entries. See the inner exception for details.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Natjecaj_Ponuda". The conflict occurred in database "PI-03", table "dbo.Ponuda", column 'ID'.
+The statement has been terminated.
+ 
+2020-06-12 14:49:28.1110|0|TestWebApp.Controllers.NatjecajController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-12 14:49:28.5665|0|TestWebApp.Controllers.NatjecajController|INFO|Natjecaj 3 dodan  
+2020-06-12 14:49:41.8882|0|TestWebApp.Controllers.NatjecajController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-12 14:49:42.0723|0|TestWebApp.Controllers.NatjecajController|INFO|Natjecaj 4 dodan  
+2020-06-12 14:59:20.2380|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 14:59:22.8073|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 14:59:22.8495|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 14:59:22.8879|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 14:59:22.9326|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 14:59:23.1364|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-12 15:01:15.1994|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 15:01:19.1108|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 15:01:19.4827|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 15:01:19.8975|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 15:01:20.3103|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 15:01:20.3878|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-12 15:02:17.8662|0|TestWebApp.Program|DEBUG|init main 
+2020-06-12 15:02:21.0535|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-12 15:02:21.1210|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-12 15:02:21.1850|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-12 15:02:21.2607|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-12 15:02:21.3110|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 

@@ -1,0 +1,21 @@
+@model OpremaTroskovi
+
+	<form asp-action="Create" method="post">
+		<div asp-validation-summary="All"></div>
+		<div class="form-group">
+			<label asp-for="OpremaId"></label>
+			<input asp-for="OpremaId" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label asp-for="Cijena"></label>
+			<input asp-for="Cijena" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label asp-for="Opis"></label>
+			<input asp-for="Opis" class="form-control" />
+		</div>
+		<div class="text-center">
+			<button class="btn btn-primary" type="submit">Dodaj</button>
+			<a asp-action="Index" class="btn btn-danger">Odustani</a>
+		</div>
+	</form>

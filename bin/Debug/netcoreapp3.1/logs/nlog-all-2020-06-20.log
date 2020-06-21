@@ -1,0 +1,302 @@
+2020-06-20 17:08:30.6901|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 17:08:36.3728|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 17:08:36.4093|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 17:08:36.4295|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 17:08:36.4465|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 17:08:36.4638|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 17:10:33.0971|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 17:10:35.4110|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 17:10:35.4460|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 17:10:35.4719|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 17:10:35.4719|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 17:10:35.5016|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 17:17:47.5338|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 17:17:49.6250|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 17:17:49.6524|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 17:17:49.6695|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 17:17:49.6823|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 17:17:49.6977|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 17:19:15.2291|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 17:19:17.4780|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 17:19:17.5211|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 17:19:17.5536|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 17:19:17.5712|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 17:19:17.6066|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 17:21:13.0160|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 17:21:15.3852|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 17:21:15.4248|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 17:21:15.4480|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 17:21:15.4678|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 17:21:15.4857|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 17:22:00.8686|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (21,672ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Sklopljeni_Posao_Osoba] AS [s] 
+2020-06-20 17:22:01.1291|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred while iterating over the results of a query for context type 'TestWebApp.Models.PI03Context'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.)
+ ---> System.ComponentModel.Win32Exception (121): The semaphore timeout period has expired.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+ClientConnectionId:f111d69f-69a1-499e-8dab-5c3754e76378
+Error Number:121,State:0,Class:20
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseSqlServer' call.
+2020-06-20 17:23:29.0321|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 17:23:31.1941|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 17:23:31.2411|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 17:23:31.2711|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 17:23:31.3567|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 17:23:31.3840|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 17:23:44.3509|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 17:23:46.6072|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 17:23:46.6513|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 17:23:46.6938|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 17:23:46.7238|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 17:23:46.7649|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 17:27:06.7316|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 17:27:09.0435|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 17:27:09.1523|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 17:27:09.1754|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 17:27:09.1754|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 17:27:09.2054|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 17:27:31.3295|0|TestWebApp.Controllers.SklopljeniPosaoOsobaController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-20 17:27:32.4303|0|TestWebApp.Controllers.SklopljeniPosaoOsobaController|INFO|SklopljeniPosaoOsoba 5 dodan  
+2020-06-20 17:29:30.6518|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 17:29:32.8910|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 17:29:32.9409|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 17:29:32.9752|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 17:29:33.0002|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 17:29:33.0273|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 17:40:21.9079|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 17:40:24.2611|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 17:40:24.2999|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 17:40:24.3258|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 17:40:24.3492|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 17:40:24.3778|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 17:41:04.2740|0|TestWebApp.Controllers.SklopljeniPosaoOpremaController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-20 17:41:04.9258|0|TestWebApp.Controllers.SklopljeniPosaoOpremaController|INFO|SklopljeniPosaoOprema 3 dodan  
+2020-06-20 18:06:09.8750|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 18:06:12.2935|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 18:06:12.3341|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 18:06:12.3653|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 18:06:12.3884|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 18:06:12.4189|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 18:06:24.5536|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. 'TestWebApp.ViewModels.SklopljeniPosaoOsobeViewModel' does not contain a definition for 'Id'
+2020-06-20 18:07:28.1071|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 18:07:30.5929|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 18:07:30.6410|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 18:07:30.6624|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 18:07:30.6885|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 18:07:30.7053|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 18:07:45.8405|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. 'TestWebApp.ViewModels.SklopljeniPosaoOsobeViewModel' does not contain a definition for 'Id'
+2020-06-20 18:09:32.6756|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 18:09:35.2175|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 18:09:35.2718|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 18:09:35.3057|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 18:09:35.3243|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 18:09:35.3472|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 18:09:47.8155|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. 'TestWebApp.ViewModels.SklopljeniPosaoOsobeViewModel' does not contain a definition for 'OsobaId'
+2020-06-20 18:11:50.6706|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 18:11:53.1196|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 18:11:53.1486|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 18:11:53.1727|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 18:11:53.1988|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 18:11:53.2234|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 18:15:23.2699|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 18:15:25.5893|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 18:15:25.6317|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 18:15:25.6570|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 18:15:25.6800|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 18:15:25.7067|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 18:17:12.8658|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. 'TestWebApp.ViewModels.SklopljeniPosaoOsobeViewModel' does not contain a definition for 'Id'
+2020-06-20 18:17:38.2348|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 18:17:40.3379|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 18:17:40.3914|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 18:17:40.4199|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 18:17:40.4344|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 18:17:40.4647|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 18:18:22.7356|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. 'TestWebApp.ViewModels.SklopljeniPosaoOsobeViewModel' does not contain a definition for 'Id'
+2020-06-20 18:24:36.9781|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 18:24:39.3840|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 18:24:39.4208|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 18:24:39.4430|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 18:24:39.4612|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 18:24:39.4832|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 18:25:05.8986|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. Cannot implicitly convert type 'TestWebApp.ViewModels.SklopljeniPosaoOsobeViewModel' to 'System.Collections.IEnumerable'. An explicit conversion exists (are you missing a cast?)
+2020-06-20 18:44:38.6684|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 18:44:45.0801|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 18:44:45.1287|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 18:44:45.1559|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 18:44:45.1832|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 18:44:45.2167|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-20 19:01:29.5865|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:01:37.8956|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:01:37.9456|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:01:37.9794|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:01:38.0268|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:01:38.0816|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:03:31.6738|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:03:34.2934|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:03:34.3595|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:03:34.4345|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:03:34.5056|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:03:34.5596|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:03:46.9624|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:03:49.4013|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:03:49.4760|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:03:49.5157|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:03:49.5449|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:03:49.5822|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:06:38.6589|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:06:40.8889|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:06:40.9259|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:06:40.9502|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:06:40.9909|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:06:41.0344|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:11:34.6951|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:11:37.3211|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:11:37.3811|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:11:37.4361|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:11:37.4909|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:11:37.5600|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:12:47.7373|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:12:49.9981|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:12:50.0305|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:12:50.0517|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:12:50.0764|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:12:50.1127|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:15:23.4700|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:15:26.3442|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:15:26.4241|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:15:26.4847|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:15:26.5445|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:15:26.5796|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:15:52.0398|20004|Microsoft.EntityFrameworkCore.Database.Connection|ERROR|An error occurred using the connection to database 'PI-03' on server 'rppp.fer.hr,3000'. 
+2020-06-20 19:15:52.5287|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred while iterating over the results of a query for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:5dd06234-0052-44a0-bb2c-0f452c22014f
+Error Number:258,State:0,Class:20 A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2020-06-20 19:16:45.1161|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:16:47.3458|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:16:47.4323|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:16:47.5507|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:16:47.5891|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:16:47.6198|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:18:37.7095|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:18:41.0657|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:18:41.1713|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:18:41.2396|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:18:41.2915|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:18:41.3463|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:19:55.3760|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:19:57.8730|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:19:57.9231|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:19:57.9662|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:19:58.0049|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:19:58.0550|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:21:34.1202|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:21:36.6203|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:21:36.6881|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:21:36.7382|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:21:36.7755|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:21:36.8205|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:23:58.3430|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:24:01.3571|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:24:01.4069|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:24:01.4345|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:24:01.4684|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:24:01.5020|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:28:13.0450|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:28:15.2330|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:28:15.2676|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:28:15.3143|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:28:15.3530|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:28:15.3977|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:28:43.9785|20004|Microsoft.EntityFrameworkCore.Database.Connection|ERROR|An error occurred using the connection to database 'PI-03' on server 'rppp.fer.hr,3000'. 
+2020-06-20 19:28:44.2652|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred while iterating over the results of a query for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:f3e7419f-f55e-436b-b159-df48b7341f04
+Error Number:258,State:0,Class:20 A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2020-06-20 19:29:07.0485|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:29:09.6472|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:29:09.7368|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:29:09.8293|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:29:09.8775|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:29:09.9310|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:30:50.4879|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:30:53.4244|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:30:53.4726|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:30:53.5365|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:30:53.5870|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:30:53.6370|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:33:03.4023|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:33:05.9554|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:33:06.0006|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:33:06.0374|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:33:06.0724|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:33:06.1060|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 
+2020-06-20 19:35:44.1485|0|TestWebApp.Program|DEBUG|init main 
+2020-06-20 19:35:46.7601|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-20 19:35:46.8563|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-20 19:35:46.9341|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-20 19:35:47.0019|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-20 19:35:47.0244|0|Microsoft.Hosting.Lifetime|INFO|Content root path: D:\programskoprojekt 

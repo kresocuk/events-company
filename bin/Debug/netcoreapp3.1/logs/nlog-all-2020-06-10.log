@@ -1,0 +1,272 @@
+2020-06-10 10:28:41.8673|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 10:28:50.2027|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 10:28:50.2800|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 10:28:50.4327|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 10:28:50.5628|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 10:28:50.6562|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 10:39:55.6581|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 10:40:00.8155|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 10:40:00.9479|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 10:40:01.4897|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 10:40:01.6611|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 10:40:01.7029|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 11:15:12.3659|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 11:15:18.4063|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 11:15:18.4477|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 11:15:18.4680|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 11:15:18.4871|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 11:15:18.5064|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 11:19:01.4159|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 11:19:03.4752|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 11:19:03.5299|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 11:19:03.5994|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 11:19:03.6185|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 11:19:03.6388|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 11:24:27.2219|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 11:24:29.6413|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 11:24:29.6817|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 11:24:29.7083|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 11:24:29.7361|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 11:24:29.7591|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 11:25:09.1017|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 11:25:11.3083|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 11:25:11.3471|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 11:25:11.3746|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 11:25:11.3991|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 11:25:11.4281|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 11:43:52.5692|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 11:43:54.7840|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 11:43:54.8388|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 11:43:54.8679|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 11:43:54.8924|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 11:43:54.9145|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 11:59:55.1538|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 11:59:57.3121|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 11:59:57.3601|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 11:59:57.3832|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 11:59:57.4034|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 11:59:57.4238|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 12:53:31.0040|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 12:53:33.3465|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 12:53:33.3907|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 12:53:33.4204|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 12:53:33.4462|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 12:53:33.4731|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 12:57:15.8251|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 12:57:17.9650|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 12:57:18.0055|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 12:57:18.0310|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 12:57:18.0557|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 12:57:18.0790|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 13:03:51.9029|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 13:03:54.1395|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 13:03:54.1941|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 13:03:54.2324|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 13:03:54.2589|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 13:03:54.2903|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 13:05:13.4167|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 13:05:15.6785|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 13:05:15.7211|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 13:05:15.7503|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 13:05:15.7764|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 13:05:15.8031|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 13:21:09.9792|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 13:21:12.1461|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 13:21:12.1890|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 13:21:12.2293|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 13:21:12.2624|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 13:21:12.3056|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 13:22:32.4710|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 13:22:34.6271|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 13:22:34.6667|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 13:22:34.6965|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 13:22:34.7190|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 13:22:34.7459|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 13:24:01.0573|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 13:24:03.3201|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 13:24:03.3766|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 13:24:03.4195|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 13:24:03.4435|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 13:24:03.4618|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 13:33:32.4793|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 13:33:34.6223|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 13:33:34.6756|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 13:33:34.7078|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 13:33:34.8045|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 13:33:34.8284|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 13:34:56.3509|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 13:34:58.4167|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 13:34:58.4609|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 13:34:58.4845|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 13:34:58.5046|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 13:34:58.5249|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 13:53:33.8801|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 13:53:36.0352|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 13:53:36.0811|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 13:53:36.1059|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 13:53:36.1301|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 13:53:36.1523|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 13:56:36.9867|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 13:56:39.1581|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 13:56:39.1999|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 13:56:39.2295|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 13:56:39.2569|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 13:56:39.2777|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 13:58:39.2151|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 13:58:41.4620|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 13:58:41.5032|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 13:58:41.5296|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 13:58:41.5578|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 13:58:41.5848|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 14:01:02.1615|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 14:01:04.4089|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 14:01:04.4551|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 14:01:04.4837|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 14:01:04.5131|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 14:01:04.5343|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 14:08:34.3152|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 14:08:36.4179|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 14:08:36.4547|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 14:08:36.4955|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 14:08:36.5339|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 14:08:36.5671|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 14:22:14.5550|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 14:22:16.5188|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 14:22:16.5865|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 14:22:16.6173|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 14:22:16.6462|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 14:22:16.6785|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 14:25:08.5528|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 14:25:14.2606|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 14:25:14.3104|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 14:25:14.3433|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 14:25:14.3672|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 14:25:14.3912|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 14:49:26.6935|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 14:49:28.8736|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 14:49:28.9171|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 14:49:28.9459|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 14:49:28.9763|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 14:49:29.0042|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 14:49:40.0222|3|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|ERROR|The view 'Index' was not found. Searched locations: /Views/JavniNatjecaji/Index.cshtml, /Views/Shared/Index.cshtml 
+2020-06-10 14:49:40.2994|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The view 'Index' was not found. The following locations were searched:
+/Views/JavniNatjecaji/Index.cshtml
+/Views/Shared/Index.cshtml
+2020-06-10 14:50:42.4765|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 14:50:44.6894|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 14:50:44.7318|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 14:50:44.7585|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 14:50:44.7966|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 14:50:44.8349|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 14:52:28.6885|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 14:52:30.9132|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 14:52:30.9540|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 14:52:30.9803|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 14:52:31.0077|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 14:52:31.0390|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 14:53:08.6420|0|TestWebApp.Controllers.JavniNatjecajiController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-10 14:53:09.2363|0|TestWebApp.Controllers.JavniNatjecajiController|INFO|JavniNatjecaji 2 dodan  
+2020-06-10 15:47:17.1536|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 15:47:19.4301|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 15:47:19.4744|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 15:47:19.5065|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 15:47:19.5355|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 15:47:19.5629|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 15:50:53.3092|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 15:50:55.5584|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 15:50:55.6003|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 15:50:55.6293|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 15:50:55.6632|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 15:50:55.6947|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-10 15:53:02.5633|0|TestWebApp.Controllers.JavniNatjecajiController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-10 15:53:03.1850|0|TestWebApp.Controllers.JavniNatjecajiController|INFO|JavniNatjecaji 3 dodan  
+2020-06-10 16:48:19.1564|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 16:48:22.1332|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 16:48:22.3466|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 16:48:22.4114|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 16:48:22.4572|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 16:48:22.4792|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 16:53:08.2688|3|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|ERROR|The view 'Edit' was not found. Searched locations: /Views/Osoba/Edit.cshtml, /Views/Shared/Edit.cshtml 
+2020-06-10 16:53:08.7960|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The view 'Edit' was not found. The following locations were searched:
+/Views/Osoba/Edit.cshtml
+/Views/Shared/Edit.cshtml
+2020-06-10 17:50:58.2642|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 17:51:00.8753|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 17:51:00.9757|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 17:51:01.0120|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 17:51:01.0370|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 17:51:01.0593|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 17:55:04.6485|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 17:55:08.9853|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 17:55:09.0654|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 17:55:09.1244|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 17:55:09.1926|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 17:55:09.3764|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 17:56:23.0267|0|TestWebApp.Controllers.ReferentniTipController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-10 17:56:24.2032|0|TestWebApp.Controllers.ReferentniTipController|INFO|ReferentniTip Auto najvise klase dodan  
+2020-06-10 18:12:57.9841|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 18:13:06.4786|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 18:13:06.6626|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 18:13:06.9078|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 18:13:07.1193|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 18:13:07.1998|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 18:30:45.2291|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 18:30:47.2322|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 18:30:47.2633|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 18:30:47.3012|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 18:30:47.3277|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 18:30:47.3554|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 18:32:01.3053|0|TestWebApp.Controllers.PosaoController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-10 18:32:02.5959|0|TestWebApp.Controllers.PosaoController|INFO|Posao Programer dodan  
+2020-06-10 18:32:46.7010|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 18:32:49.2315|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 18:32:49.7866|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 18:32:49.9498|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 18:32:50.0346|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 18:32:50.6489|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 18:34:48.0422|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 18:34:50.4334|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 18:34:50.4772|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 18:34:50.5048|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 18:34:50.5322|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 18:34:50.5591|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 19:03:27.5842|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 19:03:30.2923|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 19:03:30.7745|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 19:03:30.9947|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 19:03:31.0751|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 19:03:31.1678|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 19:04:33.4685|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 19:04:36.8447|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 19:04:36.9241|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 19:04:37.2291|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 19:04:37.3902|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 19:04:37.5440|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 19:05:38.3227|0|TestWebApp.Controllers.SklopljeniPosaoController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-10 19:05:39.6695|0|TestWebApp.Controllers.SklopljeniPosaoController|INFO|SklopljeniPosao 2 dodan  
+2020-06-10 19:07:08.1741|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 19:07:10.8156|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 19:07:11.0415|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 19:07:11.4163|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 19:07:11.6179|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 19:07:11.7102|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 19:07:25.8902|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 19:07:28.3231|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 19:07:28.3636|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 19:07:28.5223|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 19:07:28.5567|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 19:07:28.5843|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 19:08:38.0285|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 19:08:40.9125|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 19:08:40.9846|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 19:08:41.0439|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 19:08:41.0907|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 19:08:41.1314|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 19:11:41.5536|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 19:11:45.2741|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-10 19:11:46.3524|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-10 19:11:46.8789|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-10 19:11:47.4837|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-10 19:11:47.6736|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-10 19:13:07.7228|0|TestWebApp.Program|DEBUG|init main 
+2020-06-10 19:14:16.6211|0|TestWebApp.Program|DEBUG|init main 

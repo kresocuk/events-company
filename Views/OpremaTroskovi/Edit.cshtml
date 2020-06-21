@@ -1,0 +1,36 @@
+﻿@model OpremaTroskovi
+
+@{
+	ViewBag.Title = "azuriranje troskova opreme";
+}
+
+	<form method="post"
+		  asp-route-page="@ViewBag.Page"
+		  asp-route-sort="@ViewBag.Sort"
+		  asp-route-ascending="@ViewBag.Asscending">
+		<div asp-validation-summary="All"></div>
+		@*<input type="hidden" asp-for="Id" />*@
+		<div class="form-group">
+			<label asp-for="OpremaId"></label>
+			<div><span asp-validation-for="OpremaId" class="text-danger"></span></div>
+			<input asp-for="OpremaId" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label asp-for="Cijena"></label>
+			<div><span asp-validation-for="Cijena" class="text-danger"></span></div>
+			<input asp-for="Cijena" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label asp-for="Opis"></label>
+			<div><span asp-validation-for="Opis" class="text-danger"></span></div>
+			<input asp-for="Opis" class="form-control" />
+		</div>
+		<div class="text-center">
+			<button class="btn btn-primary" type="submit">Spremi</button>
+			<a asp-action="Index"
+			   asp-route-page="@ViewBag.Page"
+			   asp-route-sort="@ViewBag.Sort"
+			   asp-route-ascending="@ViewBag.Asscending"
+			   class="btn btn-danger">Odustani</a>
+		</div>
+	</form>

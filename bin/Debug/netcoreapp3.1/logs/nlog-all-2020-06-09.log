@@ -1,0 +1,956 @@
+2020-06-09 10:28:51.7909|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 10:28:55.7679|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 10:28:55.9339|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 10:28:56.0177|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 10:28:56.1327|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 10:28:56.2033|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-09 10:40:25.7087|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 10:50:29.8041|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 10:50:32.1463|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 10:50:32.1844|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 10:50:32.2107|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 10:50:32.2325|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 10:50:32.2469|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-09 10:51:04.3919|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (41ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Ponuda]
+WHERE [ID] = @p0;
+SELECT @@ROWCOUNT; 
+2020-06-09 10:51:04.5376|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (30ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Ponuda]
+WHERE [ID] = @p0;
+SELECT @@ROWCOUNT; 
+2020-06-09 10:51:04.6821|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Ponuda_Posao_Ponuda". The conflict occurred in database "PI-03", table "dbo.Ponuda_Posao", column 'PonudaID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:be7d6487-244d-48f8-8184-8edca212fb13
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 10:51:04.6821|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Ponuda_Posao_Ponuda". The conflict occurred in database "PI-03", table "dbo.Ponuda_Posao", column 'PonudaID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:c48b34c1-567e-4a5d-858a-509280712566
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 10:51:30.6892|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 10:52:16.6062|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 10:52:18.8865|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 10:52:18.9316|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 10:52:18.9612|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 10:52:18.9921|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 10:52:19.0247|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-09 10:54:27.2532|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 10:54:29.5359|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 10:54:29.5809|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 10:54:29.6119|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 10:54:29.6369|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 10:54:29.7200|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-09 10:54:41.1191|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The model item passed into the ViewDataDictionary is of type 'TestWebApp.Models.Ponuda', but this ViewDataDictionary instance requires a model item of type 'TestWebApp.Models.Certifikat'.
+2020-06-09 10:57:07.9907|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 10:57:10.1902|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 10:57:10.2380|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 10:57:10.2706|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 10:57:10.2910|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 10:57:10.3204|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-09 11:02:36.7810|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 11:02:39.1083|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 11:02:39.1594|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 11:02:39.1885|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 11:02:39.2079|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 11:02:39.2261|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-09 11:03:06.9562|0|TestWebApp.Controllers.PonudaController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-09 11:03:07.4286|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (42ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Double), @p2='?' (Size = 50) (DbType = AnsiString), @p3='?' (Size = 8000) (DbType = AnsiString), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Ponuda] ([ID], [Cijena], [Naziv], [Opis], [Trajanje], [Vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5); 
+2020-06-09 11:03:07.5836|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Ponuda' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:0fe2840e-60a7-4613-a605-5f6f9a93f509
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 11:03:07.7514|0|TestWebApp.Controllers.PonudaController|ERROR|Pogreška prilikom dodavanja novog ponuda An error occurred while updating the entries. See the inner exception for details.
+Cannot insert explicit value for identity column in table 'Ponuda' when IDENTITY_INSERT is set to OFF.
+ 
+2020-06-09 11:06:25.9614|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 11:06:28.1818|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 11:06:28.2262|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 11:06:28.2653|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 11:06:28.2988|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 11:06:28.3754|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-09 11:07:05.4702|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (38ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Ponuda]
+WHERE [ID] = @p0;
+SELECT @@ROWCOUNT; 
+2020-06-09 11:07:05.7090|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Ponuda_Posao_Ponuda". The conflict occurred in database "PI-03", table "dbo.Ponuda_Posao", column 'PonudaID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:fb7b130c-17c6-4117-9cec-abe6999d7ddb
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 11:08:04.1357|0|TestWebApp.Controllers.PonudaController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-09 11:08:04.4365|0|TestWebApp.Controllers.PonudaController|INFO|Ponuda Rođendanski paket za djecu dodana  
+2020-06-09 11:12:25.6846|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 11:12:27.9054|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 11:12:27.9501|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 11:12:27.9815|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 11:12:28.0282|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 11:12:28.0758|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-09 11:13:12.8215|0|TestWebApp.Controllers.PonudaController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-09 11:13:13.5245|0|TestWebApp.Controllers.PonudaController|INFO|Ponuda Mega paket za rođendan dodana  
+2020-06-09 11:14:27.6720|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 11:14:29.8313|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 11:14:29.8743|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 11:14:29.9012|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 11:14:29.9288|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 11:14:29.9533|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-09 19:46:52.5213|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 19:46:59.2385|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 19:46:59.4498|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 19:46:59.6930|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 19:46:59.8904|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 19:47:00.1716|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 19:49:59.8385|3|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|ERROR|The view 'Edit' was not found. Searched locations: /Views/Osoba/Edit.cshtml, /Views/Shared/Edit.cshtml 
+2020-06-09 19:50:00.3042|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The view 'Edit' was not found. The following locations were searched:
+/Views/Osoba/Edit.cshtml
+/Views/Shared/Edit.cshtml
+2020-06-09 20:10:55.5540|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 20:10:58.8395|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 20:10:59.0067|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 20:10:59.2150|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 20:10:59.4121|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 20:10:59.5010|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 20:11:43.8768|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 20:11:47.7844|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 20:11:47.8592|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 20:11:47.9093|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 20:11:47.9562|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 20:11:48.0478|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 20:14:33.5958|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 20:14:37.4923|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 20:14:37.7017|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 20:14:37.8158|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 20:14:37.8605|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 20:14:37.8852|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 20:18:03.1117|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 20:18:05.7629|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 20:18:05.8238|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 20:18:05.9153|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 20:18:05.9985|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 20:18:06.2391|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 20:35:10.5603|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 20:35:13.8208|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 20:35:13.9919|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 20:35:14.2113|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 20:35:14.3449|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 20:35:14.4266|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 20:38:13.9685|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 20:38:16.9071|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 20:38:17.0145|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 20:38:17.0992|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 20:38:17.4365|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 20:38:17.5822|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 20:39:35.0758|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 20:39:40.2918|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 20:39:40.3288|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 20:39:40.3512|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 20:39:40.3718|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 20:39:40.4513|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 20:41:30.1555|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 20:41:33.8181|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 20:41:34.1633|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 20:41:34.4569|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 20:41:34.4979|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 20:41:34.6380|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 20:45:48.0269|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 20:45:50.8158|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 20:45:51.1085|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 20:45:51.3868|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 20:45:51.5092|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 20:45:51.5849|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 20:47:07.7993|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 20:47:10.5673|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 20:47:10.9068|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 20:47:11.1606|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 20:47:11.7466|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 20:47:12.8239|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 20:47:30.9226|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The model item passed into the ViewDataDictionary is of type 'TestWebApp.Models.IznajmljivanjeOprema', but this ViewDataDictionary instance requires a model item of type 'TestWebApp.Models.Oprema'.
+2020-06-09 21:04:01.7618|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 21:04:03.2125|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 21:04:03.2687|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 21:14:51.9222|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 21:14:55.8352|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 21:14:55.9443|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 21:14:56.0059|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 21:14:56.3716|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 21:14:56.4736|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 21:15:37.6173|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 21:15:40.2838|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 21:15:40.3155|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 21:15:40.3597|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 21:15:40.3800|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 21:15:40.4355|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 21:29:32.8698|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 21:29:35.0269|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 21:29:35.0573|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 21:29:35.0895|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 21:29:35.1077|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 21:29:35.1401|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 21:32:45.6603|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 21:32:47.9087|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 21:32:47.9630|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 21:32:47.9972|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 21:32:48.0275|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 21:32:48.0692|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 21:38:30.4581|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 21:38:33.3883|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 21:38:33.4256|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 21:38:33.4688|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 21:38:33.5048|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 21:38:33.6045|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 21:40:13.7779|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 21:40:16.7660|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 21:40:16.8017|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 21:40:16.8263|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 21:40:16.8445|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 21:40:16.8731|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 21:41:46.3353|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 21:41:48.5927|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 21:41:48.6168|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 21:41:48.6425|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 21:41:48.6721|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 21:41:48.7070|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 21:42:38.1856|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (58ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 21:42:38.5074|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:30607611-3da7-49b4-bdd1-23752c49fcae
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 21:42:39.0113|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The model item passed into the ViewDataDictionary is of type 'TestWebApp.Models.IznajmljivanjeOprema', but this ViewDataDictionary instance requires a model item of type 'TestWebApp.ViewModels.IznajmljivanjeOpremaViewModel'.
+2020-06-09 21:46:12.1697|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 21:46:14.1063|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 21:46:14.1307|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 21:46:14.1540|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 21:46:14.1734|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 21:46:14.1978|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 21:46:47.7124|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (58ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 21:46:48.1041|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:a981d8ee-bf28-40df-9b4b-3bbac38f931b
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 21:46:48.5656|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The model item passed into the ViewDataDictionary is of type 'TestWebApp.Models.IznajmljivanjeOprema', but this ViewDataDictionary instance requires a model item of type 'TestWebApp.ViewModels.IznajmljivanjeOpremaViewModel'.
+2020-06-09 21:48:41.8891|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 21:48:46.0360|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 21:48:46.1390|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 21:48:46.2395|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 21:48:46.3251|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 21:48:46.3896|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 21:58:54.6846|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 21:58:57.0683|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 21:58:57.0999|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 21:58:57.1358|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 21:58:57.1596|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 21:58:57.1846|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 21:59:33.3437|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (57ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 21:59:33.6733|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:168b03cc-13c9-41f7-afb0-00f121857623
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 22:00:19.5996|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (41ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 22:00:19.7405|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:168b03cc-13c9-41f7-afb0-00f121857623
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 22:00:43.7888|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (40ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 22:00:43.9747|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:168b03cc-13c9-41f7-afb0-00f121857623
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 22:00:55.9991|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (50ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 22:00:56.2214|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:168b03cc-13c9-41f7-afb0-00f121857623
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 22:01:02.7024|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (39ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 22:01:02.8457|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:168b03cc-13c9-41f7-afb0-00f121857623
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 22:01:09.3901|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (39ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 22:01:09.5387|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:168b03cc-13c9-41f7-afb0-00f121857623
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 22:02:00.1878|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (40ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 22:02:00.3456|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:168b03cc-13c9-41f7-afb0-00f121857623
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 22:08:34.7063|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 22:10:07.1232|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 22:10:09.8835|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 22:10:09.9213|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 22:10:09.9730|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 22:10:10.0997|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 22:10:10.1236|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 22:10:54.4511|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (53ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 22:10:54.8155|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f0954b76-200a-45b0-a404-157a774cf350
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 22:11:59.0130|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 22:12:01.1318|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 22:12:01.1797|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 22:12:01.2025|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 22:12:01.2274|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 22:12:01.2457|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 22:12:59.6600|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (54ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 22:13:00.1196|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:29606a79-f4fc-4fcf-8fe7-97ef56cb8f4c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 22:15:32.4806|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 22:15:34.8484|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 22:15:34.8801|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 22:15:34.9072|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 22:15:34.9300|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 22:15:34.9548|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 22:21:15.2323|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 22:21:17.2546|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 22:21:17.2838|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 22:21:17.3083|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 22:21:17.3306|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 22:21:17.3665|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 22:21:51.0087|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (57ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 22:21:51.3711|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:d879f7f6-493c-4557-965d-2110bad5bf8d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 22:30:32.2647|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 22:30:34.3231|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 22:30:34.3512|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 22:30:34.3817|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 22:30:34.4039|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 22:30:34.4263|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 22:32:34.5525|0|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2020-06-09 22:36:40.7381|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 22:36:42.9414|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 22:36:42.9735|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 22:36:43.0049|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 22:36:43.0359|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 22:36:43.0645|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 22:37:32.1325|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (54ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 22:37:32.4901|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:16389072-36b9-452f-a6c1-ea136c5ae2d1
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 22:39:18.0550|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 22:39:20.5845|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 22:39:20.6133|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 22:39:20.6418|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 22:39:20.6753|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 22:39:20.7975|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 22:42:54.4474|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (54ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 22:42:54.8028|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:3f29af19-45b2-48a8-8b2e-652ea8434b4c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 23:02:59.3084|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 23:03:01.5207|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 23:03:01.5969|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 23:03:01.7292|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 23:03:01.7710|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 23:03:01.9269|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 23:04:07.4279|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (58ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Date)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Iznajmljivanje_Oprema] ([cijena], [detalji], [kontakt], [OpremaID], [trajanje], [vrijeme])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Iznajmljivanje_Oprema]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2020-06-09 23:04:08.1055|10000|Microsoft.EntityFrameworkCore.Update|ERROR|An exception occurred in the database while saving changes for context type 'TestWebApp.Models.PI03Context'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Iznajmljivanje_Oprema_Oprema". The conflict occurred in database "PI-03", table "dbo.Oprema", column 'ID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:b44ba01c-f6bf-4875-8f94-e6068c08f277
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) An error occurred while updating the entries. See the inner exception for details.
+2020-06-09 23:06:47.7633|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 23:06:49.5689|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 23:06:49.5975|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 23:06:49.6242|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 23:06:49.6462|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 23:06:49.6665|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 
+2020-06-09 23:10:51.7724|0|TestWebApp.Program|DEBUG|init main 
+2020-06-09 23:10:53.8059|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-09 23:10:53.8357|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-09 23:10:53.8604|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-09 23:10:53.9081|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-09 23:10:53.9655|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\edokr\PIProjekt 

@@ -1,0 +1,6 @@
+2020-06-17 14:28:48.6061|0|TestWebApp.Program|DEBUG|init main 
+2020-06-17 14:28:54.4273|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-17 14:28:54.4684|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-17 14:28:54.4954|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-17 14:28:54.5126|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-17 14:28:54.5358|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 

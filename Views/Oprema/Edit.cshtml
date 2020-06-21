@@ -1,0 +1,58 @@
+﻿@model Oprema
+
+    <tr>
+        <td colspan="2">
+            @Model.InventarniBroj
+            <input type="hidden" asp-for="Id" data-save="" />
+        </td>
+        <td>
+            @Model.Id
+            <input type="hidden" asp-for="InventarniBroj" data-save="" />
+        </td>
+        <td>
+            <input asp-for="Naziv" class="form-control" data-save="" />
+        </td>
+        <td>
+            <input asp-for="TipId" class="form-control" data-save="" />
+        </td>
+        <td>
+            <input asp-for="ReferentniTipId" class="form-control" data-save="" />
+        </td>
+        <td>
+            <input asp-for="SkladisteId" class="form-control" data-save="" />
+        </td>
+        <td>
+            <input asp-for="KupovnaVrijednost" class="form-control" data-save="" />
+        </td>
+        <td>
+            <input asp-for="KnjigovodstvenaVrijednost" class="form-control" data-save="" />
+        </td>
+        <td>
+            <input asp-for="VrijemeKupnje" class="form-control" data-save="" />
+        </td>
+        <td>
+            <input asp-for="VrijemeAmortizacije" class="form-control" data-save="" />
+        </td>
+        <td>
+            <input asp-for="Opis" class="form-control" data-save="" />
+        </td>
+
+        <td>
+            <button type="submit" class="btn btn-sm btn-primary save" title="Spremi"><i class="fas fa-save"></i></button>
+        </td>
+        <td>
+            <button class="btn btn-sm cancel" title="Odustani"><i class="fas fa-times-circle"></i></button>
+        </td>
+    </tr>
+<tr>
+    <td colspan="3">
+        <input type="checkbox" name="obrisisliku" data-save="" />
+        <span class="text-info">Obriši sliku ?</span>
+    </td>
+    <td colspan="2">
+        <div asp-validation-summary="All"></div>
+    </td>
+    <td colspan="4">
+        Zamijeni sliku s nekom drugom <input type="file" name="slika" data-save="" />
+    </td>
+</tr>

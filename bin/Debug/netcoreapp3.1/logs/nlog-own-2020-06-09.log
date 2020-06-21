@@ -1,0 +1,5 @@
+2020-06-09 11:03:07.7514|0|TestWebApp.Controllers.PonudaController|ERROR|  Pogreška prilikom dodavanja novog ponuda An error occurred while updating the entries. See the inner exception for details.
+Cannot insert explicit value for identity column in table 'Ponuda' when IDENTITY_INSERT is set to OFF.
+ |url: https://localhost/Ponuda/Create?|action: Create
+2020-06-09 11:08:04.4365|0|TestWebApp.Controllers.PonudaController|INFO|  Ponuda Rođendanski paket za djecu dodana  |url: https://localhost/Ponuda/Create?|action: Create
+2020-06-09 11:13:13.5245|0|TestWebApp.Controllers.PonudaController|INFO|  Ponuda Mega paket za rođendan dodana  |url: https://localhost/Ponuda/Create?|action: Create

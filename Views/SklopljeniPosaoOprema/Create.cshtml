@@ -1,0 +1,22 @@
+@model SklopljeniPosaoOprema
+
+	<form asp-action="Create" method="post">
+		<div asp-validation-summary="All"></div>
+		<div class="form-group">
+			<label asp-for="SklopljeniPosaoId"></label>
+			<input asp-for="SklopljeniPosaoId" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label asp-for="OpremaId"></label>
+			<input asp-for="OpremaId" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label asp-for="Trajanje"></label>
+			<input asp-for="Trajanje" class="form-control" />
+		</div>
+	
+		<div class="text-center">
+			<button class="btn btn-primary" type="submit">Dodaj</button>
+			<a asp-action="Index" class="btn btn-danger">Odustani</a>
+		</div>
+	</form>

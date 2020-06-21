@@ -1,0 +1,5 @@
+2020-06-10 14:53:09.2363|0|TestWebApp.Controllers.JavniNatjecajiController|INFO|  JavniNatjecaji 2 dodan  |url: https://localhost/JavniNatjecaji/Create?|action: Create
+2020-06-10 15:53:03.1850|0|TestWebApp.Controllers.JavniNatjecajiController|INFO|  JavniNatjecaji 3 dodan  |url: https://localhost/JavniNatjecaji/Create?|action: Create
+2020-06-10 17:56:24.2032|0|TestWebApp.Controllers.ReferentniTipController|INFO|  ReferentniTip Auto najvise klase dodan  |url: https://localhost/ReferentniTip/Create?|action: Create
+2020-06-10 18:32:02.5959|0|TestWebApp.Controllers.PosaoController|INFO|  Posao Programer dodan  |url: https://localhost/Posao/Create?|action: Create
+2020-06-10 19:05:39.6695|0|TestWebApp.Controllers.SklopljeniPosaoController|INFO|  SklopljeniPosao 2 dodan  |url: https://localhost/SklopljeniPosao/Create?|action: Create

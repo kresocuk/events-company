@@ -1,0 +1,26 @@
+@model JavniNatjecaji
+
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="All"></div>
+        
+        <div class="form-group">
+            <label asp-for="Detalji"></label>
+            <input asp-for="Detalji" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Vrijeme"></label>
+            <input asp-for="Vrijeme" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="NasaPonuda"></label>
+            <input asp-for="NasaPonuda" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="DobitnaPonuda"></label>
+            <input asp-for="DobitnaPonuda" class="form-control" />
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary" type="submit">Dodaj</button>
+            <a asp-action="Index" class="btn btn-danger">Odustani</a>
+        </div>
+    </form>

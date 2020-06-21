@@ -1,0 +1,16 @@
+2020-06-12 12:51:47.6887|0|TestWebApp.Controllers.UslugaController|INFO|  Usluga 1 dodana  |url: https://localhost/Usluga/Create?|action: Create
+2020-06-12 12:52:34.6040|0|TestWebApp.Controllers.UslugaController|INFO|  Usluga 2 dodana  |url: https://localhost/Usluga/Create?|action: Create
+2020-06-12 12:53:52.5591|0|TestWebApp.Controllers.UslugaController|INFO|  Usluga 3 dodana  |url: https://localhost/Usluga/Create?|action: Create
+2020-06-12 12:59:11.0581|0|TestWebApp.Controllers.UslugaController|INFO|  Usluga 4 dodana  |url: https://localhost/Usluga/Create?|action: Create
+2020-06-12 14:06:12.4835|0|TestWebApp.Controllers.SkladisteController|INFO|  Skladiste test dodan  |url: https://localhost/Skladiste/Create?|action: Create
+2020-06-12 14:34:33.9383|0|TestWebApp.Controllers.UnajmljivanjeOpremaController|INFO|  UnajmljivanjeOprema naziv dodan  |url: https://localhost/UnajmljivanjeOprema/Create?|action: Create
+2020-06-12 14:49:18.6867|0|TestWebApp.Controllers.NatjecajController|ERROR|  Pogreška prilikom dodavanja novog ref natjecaja An error occurred while updating the entries. See the inner exception for details.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Natjecaj_Ponuda". The conflict occurred in database "PI-03", table "dbo.Ponuda", column 'ID'.
+The statement has been terminated.
+ |url: https://localhost/Natjecaj/Create?|action: Create
+2020-06-12 14:49:25.5068|0|TestWebApp.Controllers.NatjecajController|ERROR|  Pogreška prilikom dodavanja novog ref natjecaja An error occurred while updating the entries. See the inner exception for details.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Natjecaj_Ponuda". The conflict occurred in database "PI-03", table "dbo.Ponuda", column 'ID'.
+The statement has been terminated.
+ |url: https://localhost/Natjecaj/Create?|action: Create
+2020-06-12 14:49:28.5665|0|TestWebApp.Controllers.NatjecajController|INFO|  Natjecaj 3 dodan  |url: https://localhost/Natjecaj/Create?|action: Create
+2020-06-12 14:49:42.0723|0|TestWebApp.Controllers.NatjecajController|INFO|  Natjecaj 4 dodan  |url: https://localhost/Natjecaj/Create?|action: Create

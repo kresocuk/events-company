@@ -1,0 +1,41 @@
+﻿@model JavniNatjecaji
+
+@{
+	ViewBag.Title = "azuriranje javnog natjecaja";
+}
+
+    <form method="post"
+          asp-route-page="@ViewBag.Page"
+          asp-route-sort="@ViewBag.Sort"
+          asp-route-ascending="@ViewBag.Asscending">
+        <div asp-validation-summary="All"></div>
+        @*<input type="hidden" asp-for="Id" />*@
+        <div class="form-group">
+            <label asp-for="Vrijeme"></label>
+            <div><span asp-validation-for="Vrijeme" class="text-danger"></span></div>
+            <input asp-for="Vrijeme" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Detalji"></label>
+            <div><span asp-validation-for="Detalji" class="text-danger"></span></div>
+            <input asp-for="Detalji" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="NasaPonuda"></label>
+            <div><span asp-validation-for="NasaPonuda" class="text-danger"></span></div>
+            <input asp-for="NasaPonuda" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="DobitnaPonuda"></label>
+            <div><span asp-validation-for="DobitnaPonuda" class="text-danger"></span></div>
+            <input asp-for="DobitnaPonuda" class="form-control" />
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary" type="submit">Spremi</button>
+            <a asp-action="Index"
+               asp-route-page="@ViewBag.Page"
+               asp-route-sort="@ViewBag.Sort"
+               asp-route-ascending="@ViewBag.Asscending"
+               class="btn btn-danger">Odustani</a>
+        </div>
+    </form>

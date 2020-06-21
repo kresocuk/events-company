@@ -1,0 +1,41 @@
+2020-06-18 17:54:08.1170|0|TestWebApp.Program|DEBUG|init main 
+2020-06-18 17:54:13.7119|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-18 17:54:13.7493|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-18 17:54:13.7639|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-18 17:54:13.7754|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-18 17:54:13.7902|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-18 18:07:33.8826|0|TestWebApp.Program|DEBUG|init main 
+2020-06-18 18:07:36.1420|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-18 18:07:36.1898|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-18 18:07:36.2130|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-18 18:07:36.2410|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-18 18:07:36.2611|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-18 18:25:18.3614|0|TestWebApp.Program|DEBUG|init main 
+2020-06-18 18:25:20.4483|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-18 18:25:20.4844|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-18 18:25:20.5096|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-18 18:25:20.5283|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-18 18:25:20.5414|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-18 18:25:37.8479|3|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|ERROR|The view 'Show' was not found. Searched locations: /Views/SklopljeniPosao/Show.cshtml, /Views/Shared/Show.cshtml 
+2020-06-18 18:25:38.1131|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The view 'Show' was not found. The following locations were searched:
+/Views/SklopljeniPosao/Show.cshtml
+/Views/Shared/Show.cshtml
+2020-06-18 18:42:12.6580|0|TestWebApp.Program|DEBUG|init main 
+2020-06-18 18:42:15.2714|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-18 18:42:15.3321|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-18 18:42:15.3578|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-18 18:42:15.3804|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-18 18:42:15.4004|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-18 18:52:40.1810|0|TestWebApp.Program|DEBUG|init main 
+2020-06-18 18:52:42.5820|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-18 18:52:42.6216|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-18 18:52:42.6602|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-18 18:52:42.6868|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-18 18:52:42.7152|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 
+2020-06-18 18:52:58.5176|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The model item passed into the ViewDataDictionary is of type 'TestWebApp.ViewModels.SklopljeniPosaoViewModel', but this ViewDataDictionary instance requires a model item of type 'TestWebApp.Models.SklopljeniPosao'.
+2020-06-18 18:53:40.5800|0|TestWebApp.Program|DEBUG|init main 
+2020-06-18 18:53:42.9227|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-18 18:53:42.9607|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-18 18:53:42.9886|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-18 18:53:43.0478|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-18 18:53:43.0756|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Projekt 

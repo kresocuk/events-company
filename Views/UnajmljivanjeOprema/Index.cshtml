@@ -1,0 +1,97 @@
+@model TestWebApp.ViewModels.UnajmljivanjeOpremeViewModel
+
+@{
+	ViewData["title"] = "Popis unajmljene opreme";
+}
+
+<a asp-action="Create">Unos novog unajmljene opreme</a>
+
+<pager page-info="@Model.PagingInfo" page-title="Unesite zeljenu stranicu"
+	   page-action="Index" class="float-right">
+</pager>
+
+<table class="table table-sm table-striped table-hover" id="tableunajmljivanjeoprema">
+	<thead>
+		<tr>
+			<th>
+				<a asp-route-sort="1"
+				   asp-route-page="@Model.PagingInfo.CurrentPage"
+				   asp-route-ascending="@(Model.PagingInfo.Sort == 1 ? !Model.PagingInfo.Ascending : true)">
+					Naziv
+				</a>
+			</th>
+			<th>
+				<a asp-route-sort="2"
+				   asp-route-page="@Model.PagingInfo.CurrentPage"
+				   asp-route-ascending="@(Model.PagingInfo.Sort == 2 ? !Model.PagingInfo.Ascending : true)">
+					Vrijeme
+				</a>
+			</th>
+			<th>
+				<a asp-route-sort="3"
+				   asp-route-page="@Model.PagingInfo.CurrentPage"
+				   asp-route-ascending="@(Model.PagingInfo.Sort == 3 ? !Model.PagingInfo.Ascending : true)">
+					Trajanje
+				</a>
+			</th>
+			<th>
+				<a asp-route-sort="4"
+				   asp-route-page="@Model.PagingInfo.CurrentPage"
+				   asp-route-ascending="@(Model.PagingInfo.Sort == 4 ? !Model.PagingInfo.Ascending : true)">
+					Cijena
+				</a>
+			</th>
+			<th>
+				<a asp-route-sort="5"
+				   asp-route-page="@Model.PagingInfo.CurrentPage"
+				   asp-route-ascending="@(Model.PagingInfo.Sort == 5 ? !Model.PagingInfo.Ascending : true)">
+					Detalji
+				</a>
+			</th>
+			<th>
+				<a asp-route-sort="6"
+				   asp-route-page="@Model.PagingInfo.CurrentPage"
+				   asp-route-ascending="@(Model.PagingInfo.Sort == 6 ? !Model.PagingInfo.Ascending : true)">
+					Referentni Tip
+				</a>
+			</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		@foreach ( var unajmljivanjeoprema in Model.UnajmljivanjeOpreme ){
+		<tr>
+			<td class="text-left">@unajmljivanjeoprema.Naziv</td>
+			<td class="text-left">@unajmljivanjeoprema.Vrijeme</td>
+			<td class="text-left">@unajmljivanjeoprema.Trajanje</td>
+			<td class="text-left">@unajmljivanjeoprema.Cijena</td>
+			<td class="text-left">@unajmljivanjeoprema.Detalji</td>
+			<td class="text-left">@unajmljivanjeoprema.ReferentniTipId</td>
+			<td class="btn-group">
+				<a asp-action="Edit"
+				   asp-route-id="@unajmljivanjeoprema.Id"
+				   asp-route-page="@Model.PagingInfo.CurrentPage"
+				   asp-route-sort="@Model.PagingInfo.Sort"
+				   asp-route-ascending="@Model.PagingInfo.Ascending"
+				   class="btn btn-sm" title="Ažuriraj"><i class="fas fa-edit"></i></a>
+
+				<form asp-action="Delete" method="post"
+					  asp-route-page="@Model.PagingInfo.CurrentPage"
+					  asp-route-sort="@Model.PagingInfo.Sort"
+					  asp-route-ascending="@Model.PagingInfo.Ascending">
+					<input type="hidden" name="Id" value="@unajmljivanjeoprema.Id" />
+					<button type="submit" class="btn btn-sm btn-danger delete" title="Obriši"><i class="fas fa-trash-alt"></i></button>
+				</form>
+			</td>
+		</tr>		
+		}
+	</tbody>
+</table>
+
+@section Styles{
+	
+}
+
+@section scripts{
+	
+}

@@ -1,0 +1,42 @@
+@model Osoba
+
+@{
+	ViewBag.Title = "Nova osoba";
+}
+
+<h2>Unos nove osobe!</h2>
+
+	<form asp-action="Create" method="post">
+		<div asp-validation-summary="All"></div>
+		<div class="form-group">
+			<label asp-for="Ime"></label>
+			<div><span asp-validation-for="Ime" class="text-danger"></span></div>
+			<input asp-for="Ime" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label asp-for="Prezime"></label>
+			<div><span asp-validation-for="Prezime" class="text-danger"></span></div>
+			<input asp-for="Prezime" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label asp-for="Email"></label>
+			<div><span asp-validation-for="Email" class="text-danger"></span></div>
+			<input asp-for="Email" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label asp-for="DatumRodjenja"></label>
+			<div><span asp-validation-for="DatumRodjenja" class="text-danger"></span></div>
+			<input asp-for="DatumRodjenja" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label asp-for="OsobaCertifikat"></label>
+			<div><span asp-validation-for="OsobaCertifikat" class="text-danger"></span></div>
+			<select class="form-control" asp-for="OsobaCertifikat" asp-items="ViewBag.Certifikati">
+				<option selected value="" disabled>Odaberite certifikat</option>
+			</select>
+		</div>
+		<div class="text-center">
+			<button class="btn btn-primary" type="submit">Dodaj</button>
+			<a asp-action="Index" class="btn btn-danger">Odustani</a>
+		</div>
+	</form>

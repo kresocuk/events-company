@@ -1,0 +1,28 @@
+2020-06-14 13:43:58.6033|0|TestWebApp.Controllers.UslugaController|INFO|  Usluga 5 dodana  |url: https://localhost/Usluga/Create?|action: Create
+2020-06-14 13:44:27.5749|0|TestWebApp.Controllers.CertifikatController|INFO|  Certifikat Certifikat dodan  |url: https://localhost/Certifikat/Create?|action: Create
+2020-06-14 13:46:57.8490|0|TestWebApp.Controllers.CertifikatController|ERROR|  Pogreška prilikom dodavanja novog certifikata An error occurred while updating the entries. See the inner exception for details.
+Violation of PRIMARY KEY constraint 'PK_Certifikat'. Cannot insert duplicate key in object 'dbo.Certifikat'. The duplicate key value is (0).
+The statement has been terminated.
+ |url: https://localhost/Certifikat/Create?|action: Create
+2020-06-14 13:51:53.5906|0|TestWebApp.Controllers.CertifikatController|ERROR|  Pogreška prilikom dodavanja novog certifikata An error occurred while updating the entries. See the inner exception for details.
+Cannot insert explicit value for identity column in table 'Certifikat' when IDENTITY_INSERT is set to OFF.
+ |url: https://localhost/Certifikat/Create?|action: Create
+2020-06-14 13:52:39.5958|0|TestWebApp.Controllers.CertifikatController|ERROR|  Pogreška prilikom dodavanja novog certifikata An error occurred while updating the entries. See the inner exception for details.
+Cannot insert explicit value for identity column in table 'Certifikat' when IDENTITY_INSERT is set to OFF.
+ |url: https://localhost/Certifikat/Create?|action: Create
+2020-06-14 13:56:41.1867|0|TestWebApp.Controllers.CertifikatController|ERROR|  Pogreška prilikom dodavanja novog certifikata An error occurred while updating the entries. See the inner exception for details.
+Cannot insert explicit value for identity column in table 'Certifikat' when IDENTITY_INSERT is set to OFF.
+ |url: https://localhost/Certifikat/Create?|action: Create
+2020-06-14 13:56:50.1291|0|TestWebApp.Controllers.CertifikatController|ERROR|  Pogreška prilikom dodavanja novog certifikata An error occurred while updating the entries. See the inner exception for details.
+Cannot insert explicit value for identity column in table 'Certifikat' when IDENTITY_INSERT is set to OFF.
+ |url: https://localhost/Certifikat/Create?|action: Create
+2020-06-14 14:05:41.8714|0|TestWebApp.Controllers.CertifikatController|ERROR|  Pogreška prilikom dodavanja novog certifikata An error occurred while updating the entries. See the inner exception for details.
+Cannot insert explicit value for identity column in table 'Certifikat' when IDENTITY_INSERT is set to OFF.
+ |url: https://localhost/Certifikat/Create?|action: Create
+2020-06-14 14:23:07.2283|0|TestWebApp.Controllers.CertifikatController|ERROR|  Pogreška prilikom dodavanja novog certifikata An error occurred while updating the entries. See the inner exception for details.
+Cannot insert explicit value for identity column in table 'Certifikat' when IDENTITY_INSERT is set to OFF.
+ |url: https://localhost/Certifikat/Create?|action: Create
+2020-06-14 14:24:21.6649|0|TestWebApp.Controllers.CertifikatController|ERROR|  Pogreška prilikom dodavanja novog certifikata An error occurred while updating the entries. See the inner exception for details.
+Cannot insert explicit value for identity column in table 'Certifikat' when IDENTITY_INSERT is set to OFF.
+ |url: https://localhost/Certifikat/Create?|action: Create
+2020-06-14 14:25:45.3481|0|TestWebApp.Controllers.CertifikatController|INFO|  Certifikat jkuytrw dodan  |url: https://localhost/Certifikat/Create?|action: Create

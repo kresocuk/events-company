@@ -1,0 +1,109 @@
+@model SklopljeniPosaoOsobeViewModel
+
+@{
+    ViewData["title"] = "Popis";
+}
+
+
+<div class="container">
+    <div class="form-group row">
+        <div class="col-sm-4">
+            <h2>Pregled</h2>
+            <br />
+            <a asp-action="Create">Sklopi novi</a>
+        </div>
+        
+    </div>
+</div>
+<pager page-info="@Model.PagingInfo" page-title="Unesite zeljenu stranicu"
+       
+       page-action="Index" class="float-right">
+</pager>
+
+<table class="table table-sm table-striped table-hover" id="tables">
+    <thead>
+        <tr>
+            @{
+                string[] nazivi = { "Id", "SklopljeniPosaoId", "Posao", "Osoba", "Trajanje"};
+                bool[] sortable = { true, true, true, true, true };
+                for (int i = 1; i <= nazivi.Length; i++)
+                {
+                    <th>
+                        @if (sortable[i - 1])
+                        {
+                            <a asp-route-sort="@i"
+                               asp-route-page="@Model.PagingInfo.CurrentPage"
+                               asp-route-ascending="@(Model.PagingInfo.Sort == i ? !Model.PagingInfo.Ascending : true)"
+                               >
+                                @nazivi[i - 1]
+                            </a>
+                        }
+                        else
+                        {
+                            @nazivi[i - 1]
+                        }
+
+                    </th>
+                }
+            }
+            <th></th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var sklopljeniposao in Model.SklopljeniPosaoOsobe)
+        {
+            <tr>
+                <td class="text-left">
+                       
+                       
+                        @sklopljeniposao.Id
+                    
+
+                
+
+                </td>
+                <td class="text-left">@sklopljeniposao.SklopljeniPosaoId</td>
+                <td class="text-left">@sklopljeniposao.PosaoId</td>
+                <td class="text-left">@sklopljeniposao.OsobaId</td>
+                <td class="text-left">@sklopljeniposao.Trajanje</td>
+                
+                <td class="btn-group">
+                    <a asp-action="Edit"
+                       asp-route-id="@sklopljeniposao.Id"
+                       asp-route-page="@Model.PagingInfo.CurrentPage"
+                       asp-route-sort="@Model.PagingInfo.Sort"
+                       asp-route-ascending="@Model.PagingInfo.Ascending"
+                       
+                       class="btn btn-sm" title="Ažuriraj"><i class="fas fa-edit"></i></a>
+
+                    <form asp-action="Delete" method="post"
+                          asp-route-page="@Model.PagingInfo.CurrentPage"
+                          asp-route-sort="@Model.PagingInfo.Sort"
+                          asp-route-ascending="@Model.PagingInfo.Ascending"
+                        >
+                        <input type="hidden" name="Id" value="@sklopljeniposao.Id" />
+                        <button type="submit" class="btn btn-sm btn-danger delete" title="Obriši"><i class="fas fa-trash-alt"></i></button>
+                    </form>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+@section styles{
+    <link rel="stylesheet" href="~/lib/jqueryui/themes/base/jquery-ui.css" />
+}
+
+@section scripts{
+    <script src="~/lib/jqueryui/jquery-ui.js"></script>
+    <script src="~/js/autocomplete.js"></script>
+    <script>
+		$(function () {
+			SetDeleteAjax(".deleteajax", '@Url.Action("Delete")', 'id');
+			SetEditAjax(".editajax", '@Url.Action("Edit")', 'id');
+		});
+    </script>
+}

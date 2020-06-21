@@ -1,0 +1,26 @@
+﻿@model TestWebApp.Models.Ponuda
+
+<tr>
+	
+
+	<td class="text-left">@Model.Naziv</td>
+	<td class="text-left">@Model.Cijena</td>
+	<td class="text-left">@Model.Vrijeme</td>
+	<td class="text-left">@Model.Trajanje</td>
+	<td class="text-right">@Model.Opis</td>
+	
+	
+	<td>
+		<a data-id="@Model.Id" class="btn btn-sm editajax" title="Ažuriraj">
+			<i class="fas fa-edit"></i>
+		</a>
+	</td>
+	<td>
+		<form asp-action="Delete" method="post">
+			<input type="hidden" name="Id" value="@Model.Id" />
+			<button data-id="@Model.Id" type="submit" class="btn btn-sm btn-danger deleteajax" title="Obriši">
+				<i class="fas fa-trash-alt"></i>
+			</button>
+		</form>
+	</td>
+</tr>
