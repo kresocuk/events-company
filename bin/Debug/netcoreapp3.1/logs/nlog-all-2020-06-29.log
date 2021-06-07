@@ -1,0 +1,14 @@
+2020-06-29 10:38:04.5447|0|TestWebApp.Program|DEBUG|init main 
+2020-06-29 10:38:10.3756|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-29 10:38:10.4107|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-29 10:38:10.4294|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-29 10:38:10.4447|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-29 10:38:10.4605|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Finalni Projekt 
+2020-06-29 10:55:14.4101|0|TestWebApp.Program|DEBUG|init main 
+2020-06-29 10:55:17.1044|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2020-06-29 10:55:17.1301|0|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2020-06-29 10:55:17.1653|0|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2020-06-29 10:55:17.1896|0|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2020-06-29 10:55:17.2108|0|Microsoft.Hosting.Lifetime|INFO|Content root path: C:\Users\Kreso\Desktop\Finalni Projekt 
+2020-06-29 11:07:38.2667|0|TestWebApp.Controllers.CertifikatController|TRACE|System.Text.Json.JsonSerializerOptions 
+2020-06-29 11:07:38.4437|0|TestWebApp.Controllers.CertifikatController|INFO|Certifikat Certifikat x dodan  

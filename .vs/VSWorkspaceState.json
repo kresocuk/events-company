@@ -1,16 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
-    "\\Views",
-    "\\Views\\Certifikat",
-    "\\Views\\Dobavljac",
-    "\\Views\\Korisnik",
-    "\\Views\\ReferentniTip",
-    "\\Views\\Shared",
-    "\\Views\\Shared\\Components",
-    "\\Views\\Shared\\Components\\Navigation"
+    "\\logs"
   ],
-  "SelectedNode": "\\TestWebApp.csproj",
+  "SelectedNode": "\\TestWebApp.sln",
   "PreviewInSolutionExplorer": false
 }
